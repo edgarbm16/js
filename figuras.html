@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Figuras</title>
+</head>
+<style>
+
+    header{
+        background-color: #5B2C6F;
+      }
+
+    body{
+        background-color: #8E44AD ;
+        color: white;
+    }
+
+</style>
+<body>
+    <header>
+        <div class="text-center">
+            <br>
+            <h1>
+                Figuras Geométricas
+            </h1> 
+            <p>Calculadora de área y périmetro del cuadrado, circulo y triangulo.</p>
+            <br>
+        </div>
+    </header>
+    <br>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-xl-4 col-md-6 col-lg-4">
+                    <form>
+                        <h2>Calcular cuadrado.</h2>
+                        <div>
+                            <label class="form-label" for="inputCuadrado">
+                                Medida de lado del cuadrado:
+                            </label>
+                            <input class="form-control" id="inputCuadrado" type="number"/>
+                        </div>
+                        <div class="mt-2">
+                            <button class="btn btn-success" type="button" onclick="calcularPerimetroCuadrado()">Calcular périmetro</button>
+                            <button class="btn btn-success" type="button" onclick="calcularAreaCuadrado()">Calcular área</button>
+                        </div>
+                        <div class="mt-2">
+                            <p id="resultCuadrado"></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-xl-4 col-md-6 col-lg-4">
+                    <form>
+                        <h2>Calcular triangulo y altura de triangulo isósceles.</h2>
+                        <div>
+                            <label class="form-label" for="inputTrianguloladoUno">
+                                Medida del primer lado del triangulo:
+                            </label>
+                            <input class="form-control" id="inputTrianguloladoUno" type="number"/>
+                        </div>
+                        <div>
+                            <label class="form-label" for="inputTrianguloladoDos">
+                                Medida del segundo lado del triangulo:
+                            </label>
+                            <input class="form-control" id="inputTrianguloladoDos" type="number"/>
+                        </div>
+                        <div>
+                            <label class="form-label" for="inputTrianguloBase">
+                                Medida de la base del triangulo:
+                            </label>
+                            <input class="form-control" id="inputTrianguloBase" type="number"/>
+                        </div>
+                        <div>
+                            <label class="form-label" for="inputTrianguloAltura">
+                                Medida de la altura del triangulo:
+                            </label>
+                            <input class="form-control" id="inputTrianguloAltura" type="number"/>
+                        </div>
+                        <div class="mt-2">
+                            <button class="btn btn-success" type="button" onclick="calcularPerimetroTriangulo()">Calcular périmetro</button>
+                            <button class="btn btn-success" type="button" onclick="calcularAreaTriangulo()">Calcular área</button>
+                        </div>  
+                        <div class="mt-2">
+                            <button class="btn btn-success" type="button" onclick="calcularAlturaTrianguloIsosceles()">Calcular altura de  triangulo isósceles</button>
+                        </div>
+                        <div class="mt-2">
+                            <p id="resultTriangulo"></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-xl-4 col-md-6 col-lg-4">
+                    <h2>Calcular Círculo.</h2>
+                    <div>
+                        <label class="form-label" for="inputCirculo">
+                            Medida de radio del circulo:
+                        </label>
+                        <input class="form-control" id="inputCirculo" type="number"/>
+                    </div>
+                    <div class="mt-2">
+                        <button class="btn btn-success" type="button" onclick="calcularPerimetroCirculo()">Calcular périmetro</button>
+                        <button class="btn btn-success" type="button" onclick="calcularAreaCirculo()">Calcular área</button>
+                    </div>
+                    <div class="mt-2">
+                        <p id="resultCirculo"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <script src="./javascript/figuras.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+</html>
